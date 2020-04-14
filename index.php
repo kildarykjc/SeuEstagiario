@@ -1,7 +1,7 @@
 <html>
 
 <?php 
-// Função que recebe o numero de discos que deve ser acima de zero.
+// Função que recebe o numero de discos que deve ser maior ou igual zero.
  function hanoi($n){
 	$minJogadas;
 	if($n >= 0){
