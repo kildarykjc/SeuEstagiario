@@ -4,13 +4,9 @@
 // Função que recebe o numero de discos que deve ser acima de zero.
  function hanoi($n){
 	$minJogadas;
-	if($n > 2){
-		 $minJogadas = (2*$n)+1;
-	}else if ($n==1){
-		 $minJogadas = 1;
-	}else if ($n==2){
-		 $minJogadas = 3;
-	 }else {
+	if($n >= 0){
+		 $minJogadas = pow(2,$n)-1;
+	}else {
 		 $minJogadas = 'Valor de disco incorreto';
 	 }
 	 return $minJogadas;
